@@ -8,7 +8,7 @@ class Enemy():
         # Make the Enemy's variables 
         self.x = x
         self.y = y
-        self.pic = pygame.image.load("../assets/Fish03_A.png")
+        self.pic = pygame.image.load("./assets/Fish03_A.png")
         self.speed = speed
         self.size = size
         self.hitbox = pygame.Rect(self.x, self.y, int(self.size*1.2), self.size)
@@ -39,8 +39,8 @@ clock = pygame.time.Clock()
 running = True
 # Load all the pictures for our game
 
-background_pic = pygame.image.load("../assets/Scene_A.png")
-player_pic = pygame.image.load("../assets/Fish03_open.png")
+background_pic = pygame.image.load("./assets/Scene_A.png")
+player_pic = pygame.image.load("./assets/Fish03_open.png")
 
 # make some variables for our player
 player_x = 15
@@ -55,7 +55,7 @@ player_alive = True
 score = 0
 score_font = pygame.font.SysFont("helveticaneuedeskinterface", 30)
 score_text = score_font.render("score: "+str(score), 1, (255,255,255))
-play_button_pic = pygame.image.load("../assets/BtnPlayIcon.pug")
+play_button_pic = pygame.image.load("./assets/BtnPlayIcon.pug")
 
 # Make the enemies spawing timer variable
 enemy_timer_max = 25
