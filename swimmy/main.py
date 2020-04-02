@@ -55,7 +55,7 @@ player_alive = True
 score = 0
 score_font = pygame.font.SysFont("helveticaneuedeskinterface", 30)
 score_text = score_font.render("score: "+str(score), 1, (255,255,255))
-play_button_pic = pygame.image.load("./assets/BtnPlayIcon.pug")
+play_button_pic = pygame.image.load("./assets/BtnPlayIcon.png")
 
 # Make the enemies spawing timer variable
 enemy_timer_max = 25
